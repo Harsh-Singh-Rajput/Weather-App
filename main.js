@@ -200,7 +200,7 @@ const onSearchChange = async (event) => {
 
 const setBackground = (currentWeather) => {
     let body = document.querySelector("body")
-    const weatherId = 800//currentWeather.weather[0].id  
+    const weatherId = currentWeather.weather[0].id  
     // console.log(Math.floor(weatherId / 100));
     if(weatherId === 801){
       body.style.backgroundImage = `url(./images/${8}x.jpg)`
